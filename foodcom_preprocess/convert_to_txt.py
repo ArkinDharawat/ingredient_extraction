@@ -12,5 +12,5 @@ def create_txt_file(start: int, end: int):
             fobj.write(steps_str + '.\n')
 
 
-def merge_jsonl_files(path1: str, path2: str):
-    pass
+if __name__ == '__main__':
+    create_txt_file(0, 1000)  # get first 1K steps

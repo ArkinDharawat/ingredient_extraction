@@ -16,7 +16,7 @@ have to do this step once since we will mainly import/export the dataset from th
 ### Start and run the server
 - Starts the server
     ```shell script
-    docker container start doccano
+    docker container start ner_test
     ```
 - Go to `http://0.0.0.0:8000/` and you'll see the front page of the server. Login using the admin
 credentials.
@@ -29,7 +29,7 @@ different if you select something else.
 - Once you're done export the datasets. You'll get a zip folder which contains 2 `.jsonl` files: `admin.jsonl` and `unknown.jsonl`.
 - To stop the container just run
     ```shell script
-    docker container stop doccano
+    docker container stop ner_test
     ```
 - The next time you start annotation make sure to upload the `unknown.jsonl` to the dataset since thi 
 contains the un-annotated data. 
